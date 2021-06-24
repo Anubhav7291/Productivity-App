@@ -1,0 +1,38 @@
+h2{
+    color:white
+}
+h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:white;
+}
+h1:hover{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(231, 231, 17);
+}
+.main{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7))
+    ,url("./images/pexels-cottonbro-7429470.jpg");
+   
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+    
+}
+.container-sm .item{
+    border:2px solid black;
+    border-radius: 20px;
+}
+.card{
+    opacity: 0.9;
+}
+
+.window{
+    color:rgb(126, 38, 38)
+}
+.edit{
+    color:rgb(44, 182, 44)
+}
+.hidden{
+    opacity: 0;
+}
