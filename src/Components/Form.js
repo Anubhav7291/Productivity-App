@@ -53,7 +53,7 @@ const Form=(props)=>{
     }
 
     const EditKey=(index)=>{
-        document.getElementById("input1").value=items[index];
+        document.querySelector(".input1").value=items[index];
         
         console.log(document.getElementById("Add-btn"));
         setToggler(true);
