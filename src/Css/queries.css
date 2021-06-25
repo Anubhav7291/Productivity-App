@@ -1,0 +1,39 @@
+@media screen and (max-width:610px) {
+    /* Nav */
+    h1{
+        font-size: 18px;
+    }
+    .row{
+        margin-right: 50px;
+    }
+    .row .col{
+        width: 80px;
+        
+    }
+    /* Form */
+    .formmain{
+        margin-left: 40px;
+    }
+    .card {
+        width:160%;
+      
+    }
+    .editbutton{
+        margin-bottom: 13px;
+    }
+    .rewards{
+        margin-left: 40px;
+
+    }
+
+    .container-sm{
+        height: auto;
+
+    }
+    .input1 {
+        width: 30px;
+      
+    }
+    
+    
+}

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../Css/queries.css'
 
 const Form=(props)=>{
   
@@ -63,7 +64,7 @@ const Form=(props)=>{
 
 
     return (
-        <div className="container-sm main" style={{width:"50%"}}>
+        <div className="container-sm formmain" style={{width:"50%",height:"50%"}}>
         <div className="card text-center">
             <div className="card-header bg-primary">
                <h2>{props.h1name}</h2> 
@@ -73,7 +74,7 @@ const Form=(props)=>{
               ?
               <div classname="setTitle" >
                   <h3 style={{display:"inline-block"}}>{props.h1name} sets for today is {no}</h3>&nbsp;&nbsp;
-                  <button onClick={setNumber} className="btn-primary btn-md">Edit</button>
+                  <button onClick={setNumber} className="btn-primary btn-md editbutton">Edit</button>
                   
               </div> 
               :
@@ -87,7 +88,7 @@ const Form=(props)=>{
                  <button onClick={setNumber} className="btn-primary">Set</button>
                 </div>
 }
-                <input onChange={(e)=>setValue(e.target.value)} id="input1" className="text-center" style={{height:"30px",width:"200px"}} placeholder={props.placeholder} />
+                <input onChange={(e)=>setValue(e.target.value)}  className="input1 text-center" placeholder={props.placeholder} />
                 {toggler?<i onClick={AddItem} className='edit outline big globe icon'></i>:<i onClick={AddItem} id="Add-btn" className="plus square outline big globe icon" ></i>  
                 }<hr/>
             <div className="items">
@@ -95,9 +96,9 @@ const Form=(props)=>{
                     {items.map((item,index)=>{
                       return (
                         <div className="space"  style={{marginTop:"8px"}}>
-                      <div className="container-sm item" style={{height:"30px",fontFamily:"cursive",width:"40%",textAlign:"justify",backgroundColor:index%2===0?'yellow':'orange'}}>
+                      <div className="container-lg item" style={{fontFamily:"cursive",width:"40%",textAlign:"justify",backgroundColor:index%2===0?'yellow':'orange'}}>
                            {item}
-                           <div style={{float:'right'}}>
+                           <div style={{float:'right',position:"relative"}}>
                            <a href="#"><i onClick={()=>EditKey(index)}  className="edit icon"></i></a>
                            <a href="#"><i onClick ={()=>Deletekey(index)} className="window close icon"></i></a>
                            </div>

@@ -19,7 +19,7 @@ import React from 'react';
 
 
      return(
-     <div className="container-sm" style={{width:"50%"}}>
+     <div className="container-sm rewards" style={{width:"50%"}}>
          <div className="card text-center">
              <div className="card-header bg-primary">
                  <h2>Productivity</h2>

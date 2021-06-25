@@ -4,7 +4,8 @@ import Dailies from './Dailies';
 import { BrowserRouter,Route } from 'react-router-dom';
 
 import Nav from './Nav'
-import '../style.css'
+import '../Css/style.css'
+import '../Css/queries.css'
 import Todo from './Todo';
 import Rewards from './Rewards';
 

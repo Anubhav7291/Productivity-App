@@ -11,20 +11,28 @@ h1:hover{
 }
 .main{
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7))
-    ,url("./images/pexels-cottonbro-7429470.jpg");
+    ,url("../images/pexels-cottonbro-7429470.jpg");
    
     background-size: cover;
     background-position: center;
     height: 100vh;
+    overflow: auto;
     background-attachment: fixed;
     
 }
-.container-sm .item{
+ .item{
     border:2px solid black;
     border-radius: 20px;
+    height: auto;
+    overflow: auto;
+    padding: 9px;
 }
 .card{
     opacity: 0.9;
+}
+.input1{
+    height:30px;
+    width:170px
 }
 
 .window{
